@@ -66,7 +66,7 @@ local function Tab_OnClick(self)
 	self.content:Show();	
 end
 
-local function SetTabs(frame, numTabs, ...)
+local function SetTabs(frame, numTabs, ...) --создание нижних вкладок
 	frame.numTabs = numTabs;
 	
 	local contents = {};
@@ -172,6 +172,6 @@ function Config:CreateMenu()
 	-- Content3
 	----------------------------------
 	
-	UIConfig:Hide();
+	UIConfig:Hide(); --скрытие фрейма
 	return UIConfig;
 end
